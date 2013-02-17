@@ -87,7 +87,7 @@
                     }
                 }
             }
-            self.score = self.lastMatchScore -= FLIP_COST;
+            self.score += self.lastMatchScore - FLIP_COST;
         }
         card.faceUp = !card.isFaceUp;
     }
