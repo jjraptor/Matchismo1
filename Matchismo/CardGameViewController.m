@@ -90,7 +90,6 @@
 - (IBAction)flipCard:(UIButton *)sender
 {
     [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender] forMatchMode:(NSInteger)self.matchMode];
-    NSLog(@"%d", self.matchMode);
     self.flipCount++;
     if (!self.cardHasBeenFlipped) {
         self.cardHasBeenFlipped = YES;

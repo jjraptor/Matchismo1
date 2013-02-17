@@ -78,10 +78,10 @@
                             for (Card *card in otherCards) {
                                 card.unplayable = YES;
                             }
-                            self.lastMatchScore += matchScore * MATCH_BONUS;
+                            self.lastMatchScore += (matchScore * MATCH_BONUS * (mode -1));
                         } else {
                             otherCard.faceUp = NO;
-                            self.lastMatchScore = -MISMATCH_PENALTY;
+                            self.lastMatchScore = -MISMATCH_PENALTY * (mode -1);
                         }
                         break;
                     }
